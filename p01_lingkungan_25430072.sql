@@ -23,3 +23,9 @@ USE kopma_072;
 SHOW TABLES;
 
 SELECT @@sql_mode;
+CREATE USER 'tamu_072'@'localhost'
+IDENTIFIED BY '<PASSWORD>';
+
+GRANT ALL PRIVILEGES ON kopma_072.* 
+TO 'tamu_072'@'localhost';
+
