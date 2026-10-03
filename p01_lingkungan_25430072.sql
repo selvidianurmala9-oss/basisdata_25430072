@@ -8,11 +8,11 @@ SELECT USER();
 
 SHOW DATABASES;
 
-CREATE DATABASE kopma_072
+CREATE DATABASE IF NOT EXISTS kopma_072
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 
-CREATE USER 'mhs_072'@'localhost'
+CREATE USER IF NOT EXISTS 'mhs_072'@'localhost'
 IDENTIFIED BY '<PASSWORD>';
 
 GRANT ALL PRIVILEGES ON kopma_072.* 
@@ -23,9 +23,8 @@ USE kopma_072;
 SHOW TABLES;
 
 SELECT @@sql_mode;
-CREATE USER 'tamu_072'@'localhost'
+CREATE USER IF NOT EXISTS 'tamu_072'@'localhost'
 IDENTIFIED BY '<PASSWORD>';
 
-GRANT ALL PRIVILEGES ON kopma_072.* 
+GRANT SELECT ON kopma_072.*
 TO 'tamu_072'@'localhost';
-
