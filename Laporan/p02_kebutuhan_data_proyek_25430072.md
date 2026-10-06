@@ -9,7 +9,8 @@ P                      : 1
 D.2 Proses Bisnis
 
 | Kode | Proses Bisnis | Aktor | Pemicu |
-| --- | --- | --- | --- |
+|---|---|---|---|
+| PB-00 | Mengelola data pelanggan | Pelanggan/Admin | Pelanggan melakukan pendaftaran atau mengubah data |
 | PB-01 | Mengelola katalog produk | Admin | Ada produk baru atau perubahan informasi produk |
 | PB-02 | Mengelola keranjang | Pelanggan | Pelanggan memilih produk |
 | PB-03 | Membuat pesanan | Pelanggan | Pelanggan melakukan checkout |
